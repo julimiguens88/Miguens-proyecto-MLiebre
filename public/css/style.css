@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+.fontsz-12p{
+    font-size: 12px;
+}
+
+.fontsz-24p{
+    font-size: 24px;
+}
+
+.fontsz-18p{
+    font-size: 18px;
+}
+
+.fontsz-16p{
+    font-size: 16px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.bg-yellow{
+    background-color: #EAC926;
+}
+.bg-lightgrey{
+    background-color: #ebebeb;
+}
+
+.bg-blue{
+    background-color: #03264C;
+}
+
+.bg-lightblue{
+    background-color: #1259c3;
+}
+
+.margin-bt-10p{
+    margin-bottom: 10px;
+}
