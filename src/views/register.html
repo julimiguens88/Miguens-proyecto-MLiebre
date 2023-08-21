@@ -15,18 +15,17 @@
     <title>Mercado Liebre</title>
 </head>
 <body class="bg-lightgrey">
-    <header class="bg-yellow">
+    <header class="bg-yellow pos-fix-header pad-15 width-100perc">
         <section class=" dspl-flex flex-wrap not-mob-header flex-align-ctr pad-15">
+            <div class="dspl-flex justif-cont-sp-btw adapt-header">
                 <h1 class="width-50perc">
-                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="width-100perc">
                 </h1>
-                <form action="/" method="POST">
-                    <input type="text" name="search" class="bd-rad-5p border-white bg-white" placeholder="Buscar productos, marcas y más">
+                <form action="/" method="POST" class=" dspl-flex width-50perc pad-left-20px">
+                    <input type="text" name="search" class="self-center border-white bd-rad-5p bg-white width-100perc" placeholder="Buscar productos, marcas y más">
                 </form>
-<!-- <p class="width-50perc">Acá va la barra de búsqueda</p> -->                
-            <div class="centered">
-                <p><i class="fa-solid fa-hand-holding-dollar pad-15"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
-            </div>
+            </div>                               
+            <p class="centered font-bold margin-bt-10p"><i class="fa-solid fa-hand-holding-dollar pad-15"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
         </section>
         <nav class="nav-not-mob flex-row justif-cont-sp-btw pad-15">
             <ul type="none" class="dspl-flex flex-row">
@@ -36,8 +35,8 @@
                 <li class="mg-sides-5px"><a href="#">Ayudas</a></li>
             </ul>
             <ul type="none" class="dspl-flex flex-row">
-                <li class="mg-sides-5px"><a href="#">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                <li class="mg-sides-5px"><a href="#">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                <li class="mg-sides-5px"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+                <li class="mg-sides-5px"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                 <li class="mg-sides-5px"><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
@@ -46,7 +45,89 @@
         </div>
     </header>
     
-    <main>
+    <main class="mg-top-220px">
+        <form action="/" method="get" class="dspl-flex flex-col width-70perc wid mx-auto pad-15">
+            <h4 class="pady-5 fontsz-18p">
+                Nombre y Apellido                
+            </h4>
+            <input type="text" name="nombreapellido" id="nombreapellido" placeholder="Julia Miguens" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <h4 class="pady-5 fontsz-18p">
+                Usuario                
+            </h4>
+            <input type="text" name="usuario" id="usuario" placeholder="usuario" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <h4 class="pady-5 fontsz-18p">
+                Email                
+            </h4>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <h4 class="pady-5 fontsz-18p">
+                Fecha de Nacimiento                
+            </h4>
+            <input type="date" name="fechanac" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <h4 class="pady-5 fontsz-18p">
+                Domicilio                
+            </h4>
+            <input type="text" name="domicilio" id="domicilio" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <h4 class="pady-5 fontsz-18p">
+                Perfil del usuario                
+            </h4>
+            <div class="dspl-flex">
+                <div class="dspl-flex pad-5">
+                    <input type="radio" name="perfilusuario" value="Vendedor">
+                    <label class="fontsz-16p pad-5">Vendedor</label>
+                </div>
+                <div class="dspl-flex pad-5">
+                    <input type="radio" name="perfilusuario" value="Comprador" checked>
+                    <label class="fontsz-16p pad-5">Comprador</label>
+                </div>
+            </div>
+            
+            <h4 class="pady-5 fontsz-18p">
+                Intereses                
+            </h4>
+            <div class="dspl-flex">
+                <input type="checkbox" name="intereses" value="electro"><label class="fontsz-16p padleft-5">Electro</label>
+            </div>
+            <div class="dspl-flex">
+                <input type="checkbox" name="intereses" value="moda"><label class="fontsz-16p padleft-5">Moda</label>
+            </div>
+            <div class="dspl-flex">
+                <input type="checkbox" name="intereses" value="hogar"><label class="fontsz-16p padleft-5">Hogar</label>
+            </div>
+            <div class="dspl-flex">
+                <input type="checkbox" name="intereses" value="jugueteria"><label class="fontsz-16p padleft-5">Jugueteria</label>
+            </div>
+            <div class="dspl-flex">
+                <input type="checkbox" name="intereses" value="vidasana"><label class="fontsz-16p padleft-5">Vida Sana</label>
+            </div>
+            <h4 class="pady-5 fontsz-18p">
+                Foto de usuario                
+            </h4>
+            <input type="file" name="foto" accept=".jpg" class="fontsz-16p pady-5">
+            <h4 class="pady-5 fontsz-18p">
+                Contraseña                
+            </h4>
+            <input type="password" name="password1" id="password1" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <h4 class="pady-5 fontsz-18p">
+                Repetir contraseña                
+            </h4>
+            <input type="password" name="password2" id="password2" class="mg-y-15p pady-5 border-no fontsz-16p width-100perc">
+            <p class="input-error"></p>
+            <div class="dspl-flex justif-cont-sp-ar padtop-15">
+                <a href="/home">
+                    <button type="submit" class="pad-5 bd-rad-5p font-bold">Enviar</button>
+                </a>
+                <button type="reset" class="pad-5 bd-rad-5p font-bold">Borrar</button>
+            </div>
+            
+
+
+        </form>
 
     </main>
     
@@ -84,7 +165,7 @@
                 ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
             </p>
         </section>
-        <div>
+        <div class="fontsz-10p mg-y-15p">
             Copyright © 1999-2020 MercadoLiebre S.R.L.
         </div>
     </footer>

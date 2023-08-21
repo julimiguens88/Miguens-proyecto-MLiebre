@@ -15,18 +15,17 @@
     <title>Mercado Liebre</title>
 </head>
 <body class="bg-lightgrey">
-    <header class="bg-yellow">
+    <header class="bg-yellow pos-fix-header pad-15 width-100perc">
         <section class=" dspl-flex flex-wrap not-mob-header flex-align-ctr pad-15">
+            <div class="dspl-flex justif-cont-sp-btw adapt-header">
                 <h1 class="width-50perc">
-                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="width-100perc">
                 </h1>
-                <form action="/" method="POST">
-                    <input type="text" name="search" class="bd-rad-5p border-white bg-white" placeholder="Buscar productos, marcas y más">
+                <form action="/" method="POST" class=" dspl-flex width-50perc pad-left-20px">
+                    <input type="text" name="search" class="self-center border-white bd-rad-5p bg-white width-100perc" placeholder="Buscar productos, marcas y más">
                 </form>
-<!-- <p class="width-50perc">Acá va la barra de búsqueda</p> -->                
-            <div class="centered">
-                <p><i class="fa-solid fa-hand-holding-dollar pad-15"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
-            </div>
+            </div>                               
+            <p class="centered font-bold margin-bt-10p"><i class="fa-solid fa-hand-holding-dollar pad-15"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
         </section>
         <nav class="nav-not-mob flex-row justif-cont-sp-btw pad-15">
             <ul type="none" class="dspl-flex flex-row">
@@ -36,8 +35,8 @@
                 <li class="mg-sides-5px"><a href="#">Ayudas</a></li>
             </ul>
             <ul type="none" class="dspl-flex flex-row">
-                <li class="mg-sides-5px"><a href="#">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                <li class="mg-sides-5px"><a href="#">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                <li class="mg-sides-5px"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+                <li class="mg-sides-5px"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                 <li class="mg-sides-5px"><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
@@ -46,8 +45,15 @@
         </div>
     </header>
     
-    <main>
-
+    <main class="mg-top-220px">
+        <form action="/" method="get" class="dspl-flex flex-col width-80perc mx-auto align-it-ctr pady-30">
+            <input type="text" name="usuario" placeholder="Usuario" class="mg-y-15p pady-5 border-no fontsz-24p width-100perc centered">
+            <input type="text" name="password" placeholder="Contraseña" class=" mg-y-15p border-no fontsz-24p pady-5 margin-bt-10p width-100perc centered">
+            <div class="button mg-y-15p">
+                <button type="submit" class="width-70p bg-lightgrey bd-rad-5p fontsz-16p but-shadow">Ingresar</button>
+            </div>
+        </form>
+        
     </main>
     
     <footer>
@@ -84,7 +90,7 @@
                 ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
             </p>
         </section>
-        <div>
+        <div class="fontsz-10p mg-y-15p">
             Copyright © 1999-2020 MercadoLiebre S.R.L.
         </div>
     </footer>

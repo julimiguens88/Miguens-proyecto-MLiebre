@@ -15,18 +15,17 @@
     <title>Mercado Liebre</title>
 </head>
 <body class="bg-lightgrey">
-    <header class="bg-yellow">
+    <header class="bg-yellow pos-fix-header pad-15 width-100perc">
         <section class=" dspl-flex flex-wrap not-mob-header flex-align-ctr pad-15">
+            <div class="dspl-flex justif-cont-sp-btw adapt-header">
                 <h1 class="width-50perc">
-                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="width-100perc move">
                 </h1>
-                <form action="/" method="POST">
-                    <input type="text" name="search" class="bd-rad-5p border-white bg-white" placeholder="Buscar productos, marcas y más">
+                <form action="/" method="POST" class=" dspl-flex width-50perc pad-left-20px">
+                    <input type="text" name="search" class="self-center border-white bd-rad-5p bg-white width-100perc" placeholder="Buscar productos, marcas y más">
                 </form>
-<!-- <p class="width-50perc">Acá va la barra de búsqueda</p> -->                
-            <div class="centered">
-                <p><i class="fa-solid fa-hand-holding-dollar pad-15"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
-            </div>
+            </div>                               
+            <p class="centered font-bold margin-bt-10p"><i class="fa-solid fa-hand-holding-dollar pad-15"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
         </section>
         <nav class="nav-not-mob flex-row justif-cont-sp-btw pad-15">
             <ul type="none" class="dspl-flex flex-row">
@@ -36,8 +35,8 @@
                 <li class="mg-sides-5px"><a href="#">Ayudas</a></li>
             </ul>
             <ul type="none" class="dspl-flex flex-row">
-                <li class="mg-sides-5px"><a href="#">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                <li class="mg-sides-5px"><a href="#">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                <li class="mg-sides-5px"><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+                <li class="mg-sides-5px"><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                 <li class="mg-sides-5px"><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
@@ -45,53 +44,54 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
-    <main class="vw-90 mx-auto">
+    <img class="width-100perc mg-top-220px" src="/images/img-home-banner.jpg" alt="Promoción fiestas" />
+    <main class="vw-90 mx-auto ">
         <section class="dspl-flex flex-wrap flex-row justif-cont-sp-btw">
             <h2 class="fontsz-24p width-100perc my-8p-mx-auto colordarkgrey">
                 Basado en tu última visita
             </h2>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$6.770</p>
-                        <p class="fontsz-16p colorgreen width-70perc">40% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">40% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">Cafetera Moulinex</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">Cafetera Moulinex</h3>
                 </div>
             </article >
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$230.000</p>
-                        <p class="fontsz-16p colorgreen width-70perc">20% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">20% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">MacBook Pro 2019</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">MacBook Pro 2019</h3>
                 </div>
             </article>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$70.500</p>
-                        <p class="fontsz-16p colorgreen width-70perc">10% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">10% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">Samsung Galaxy S10</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">Samsung Galaxy S10</h3>
                 </div>
             </article>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="/images/img-tv-samsung-smart.jpg" alt="img-smart-tv" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$23.200</p>
-                        <p class="fontsz-16p colorgreen width-70perc">5% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">5% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">SmartTv Samsung 43"</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">SmartTv Samsung 43"</h3>
                 </div>
             </article>
         </section>
@@ -99,88 +99,91 @@
             <h2 class="fontsz-24p width-100perc my-8p-mx-auto colordarkgrey">
                 Ofertas
             </h2>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$6.770</p>
-                        <p class="fontsz-16p colorgreen width-70perc">40% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">40% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">Cafetera Moulinex</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">Cafetera Moulinex</h3>
                 </div>
             </article>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro"  class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$230.000</p>
-                        <p class="fontsz-16p colorgreen width-70perc">20% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">20% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">MacBook Pro 2019</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">MacBook Pro 2019</h3>
                 </div>
             </article>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$70.500</p>
-                        <p class="fontsz-16p colorgreen width-70perc">10% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">10% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">Samsung Galaxy S10</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">Samsung Galaxy S10</h3>
                 </div>
             </article>
-            <article class= "mb-10px img-box-shadow width-100perc width-tablet-flex">
+            <article class= "mb-10px img-box-shadow no-shadow width-100perc width-tablet-flex product">
                 <img src="/images/img-tv-samsung-smart.jpg" alt="img-smart-tv" class="width-100perc">
                 <div class="fontsz-12p bt-1 border-grey pad-15 bg-white pos-rel">
-                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p"></i>
+                    <i class="fa-solid fa-truck colorgreen border-shp post-shp pad-5 fontsz-16p width-30p height-30p rotate"></i>
                     <div class="dspl-flex align-it-ctr">
                         <p class="fontsz-18p width-30perc">$23.200</p>
-                        <p class="fontsz-16p colorgreen width-70perc">5% off</p>
+                        <p class="fontsz-16p colorgreen width-70perc centered">5% off</p>
                     </div>
-                    <h3 class="fontsz-16p desc-not-mob">SmartTv Samsung 43"</h3>
+                    <h3 class="fontsz-16p desc-not-mob description">SmartTv Samsung 43"</h3>
                 </div>
             </article>
         </section>
     </main>
     
     <footer>
-        <section class="centered">
-            <p class="margin-bt-10p">
-                <i class="fa-solid fa-credit-card" style="color: blue; font-size: 2em;"></i>
-            </p>
-            <h4>
-                Pagá con Tarjeta o en efectivo
-            </h4>
-            <p>
-                Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
-            </p>
+        <section class="dspl-flex flex-col footer-desktop">
+            <div class="centered margin-bt-10p">
+                <p class="margin-bt-10p icon">
+                    <i class="fa-solid fa-credit-card color-blue" style="font-size: 2em;"></i>
+                </p>
+                <h5>
+                    Pagá con Tarjeta o en efectivo
+                </h5>
+                <p class="fontsz-10p pady-5">
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </div>
+            <div class="centered margin-bt-10p">
+                <p class="margin-bt-10p icon">
+                    <i class="fa-solid fa-gift color-blue" style="font-size: 2em;"></i>
+                </p>
+                <h5>
+                    Envío gratis desde $ 2.500
+                </h5>
+                <p class="fontsz-10p pady-5">
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </div>
+            <div class="centered margin-bt-10p">
+                <p class="margin-bt-10p icon">
+                    <i class="fa-solid fa-user-shield color-blue" style="font-size: 2em;"></i>
+                </p>
+                <h5>
+                    Seguridad, de principio a fin
+                </h5>
+                <p class="fontsz-10p pady-5">
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                </p>
+            </div>
         </section>
-        <section class="centered">
-            <p class="margin-bt-10p">
-                <i class="fa-solid fa-gift" style="color: blue; font-size: 2em;"></i>
-            </p>
-            <h4>
-                Envío gratis desde $ 2.500
-            </h4>
-            <p>
-                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
-            </p>
-        </section>
-        <section class="centered">
-            <p class="margin-bt-10p">
-                <i class="fa-solid fa-user-shield" style="color:blue; font-size: 2em;"></i>
-            </p>
-            <h4>
-                Seguridad, de principio a fin
-            </h4>
-            <p>
-                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
-            </p>
-        </section>
-        <div>
+        
+        <div class="fontsz-10p mg-y-15p">
             Copyright © 1999-2020 MercadoLiebre S.R.L.
         </div>
     </footer>
